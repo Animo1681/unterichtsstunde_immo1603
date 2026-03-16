@@ -3,167 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gemeinde Fischbrunn - FAQ Wirtschaft & Finanzen</title>
-    <!-- Tailwind CSS für das schnelle, moderne Behörden-Design -->
+    <title>ImmoStart - Das Gründerportal</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        /* Sanfte Animation für die aufklappbaren FAQ-Elemente */
-        details > summary {
-            list-style: none;
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            blue: '#1e3a8a',
+                            light: '#eff6ff',
+                            accent: '#f59e0b'
+                        }
+                    }
+                }
+            }
         }
-        details > summary::-webkit-details-marker {
-            display: none;
-        }
-        details[open] summary ~ * {
-            animation: sweep .3s ease-in-out;
-        }
-        @keyframes sweep {
-            0%    {opacity: 0; margin-top: -10px}
-            100%  {opacity: 1; margin-top: 0px}
-        }
-    </style>
+    </script>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans min-h-screen flex flex-col">
+<body class="bg-gray-50 font-sans text-gray-800">
 
-    <!-- Header / Kopfzeile der Gemeinde -->
-    <header class="bg-blue-900 text-white shadow-md">
-        <div class="max-w-6xl mx-auto px-4 py-6 flex justify-between items-center">
-            <div class="flex items-center space-x-4">
-                <!-- Platzhalter für das Gemeindewappen -->
-                <div class="w-12 h-14 bg-white rounded-b-xl flex justify-center items-center shadow-inner">
-                    <span class="text-blue-900 font-bold text-xl">🐟</span>
-                </div>
-                <div>
-                    <h1 class="text-2xl font-bold tracking-wide">Gemeinde Fischbrunn</h1>
-                    <p class="text-blue-200 text-sm">Rathaus & Bürgerservice</p>
-                </div>
+    <!-- Navigation -->
+    <nav class="bg-brand-blue text-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-city text-2xl text-brand-accent"></i>
+                <span class="text-xl font-bold tracking-wider">ImmoStart Ratgeber</span>
             </div>
-            <div class="hidden md:flex space-x-6 text-sm font-medium">
-                <a href="#" class="hover:text-blue-300 transition">Startseite</a>
-                <a href="#" class="hover:text-blue-300 transition">Rathaus</a>
-                <a href="#" class="hover:text-blue-300 transition">Bürgerservice</a>
-                <a href="#" class="text-blue-300 border-b-2 border-blue-300 pb-1">Wirtschaft & FAQ</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#" class="hover:text-brand-accent transition">Branchen-News</a>
+                <a href="#" class="hover:text-brand-accent transition">Finanzierung</a>
+                <a href="#" class="hover:text-brand-accent transition">Gewerbeflächen-Suche</a>
+                <a href="#" class="text-brand-accent font-bold border-b-2 border-brand-accent">Rechtsformen</a>
             </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-brand-light py-16">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-brand-blue mb-4">Das Portal für Immobilien-Gründer</h1>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto mb-8">Erfolgreich mieten, bauen und kooperieren – So stellen Sie Ihr Immobilien-Startup rechtlich und wirtschaftlich auf sichere Beine.</p>
         </div>
     </header>
 
-    <!-- Breadcrumbs / Brotkrümelnavigation -->
-    <div class="bg-gray-200 border-b border-gray-300">
-        <div class="max-w-6xl mx-auto px-4 py-2 text-xs text-gray-600">
-            Startseite > Bürgerservice > Finanzen & Wirtschaft > <span class="font-semibold">Bürger-FAQ: EZB & Zinsen</span>
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-4 py-12">
+        
+        <!-- Fließtext: Der Weg von Personen- zu Kapitalgesellschaften -->
+        <div class="mb-16 bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+            <h2 class="text-3xl font-bold text-brand-blue mb-6">Wichtige Grundsatzentscheidung: Wem gehört das Risiko?</h2>
+            
+            <div class="prose max-w-none text-gray-700 text-lg leading-relaxed space-y-4">
+                <p>
+                    Als Gründer in der Immobilienwirtschaft – sei es als frisches Maklerbüro, junge Hausverwaltung oder beim Start eines ehrgeizigen Bauprojekts – stehen Sie am Anfang vor einer zentralen Frage: Welche Rechtsform passt zu meinem Vorhaben? Viele angehende Unternehmer schließen sich zunächst in einer Form zusammen, bei der die persönliche Zusammenarbeit und das gegenseitige Vertrauen im Vordergrund stehen. Man bringt Arbeitskraft ein und führt die Geschäfte gemeinsam.
+                </p>
+                <p>
+                    Bei diesen klassischen Personengesellschaften gibt es jedoch einen entscheidenden Haken, der insbesondere bei risikobehafteten oder kapitalintensiven Immobilienprojekten zum Problem wird: Das Gesetz sieht vor, dass mindestens ein Partner unbeschränkt, direkt und solidarisch mit seinem gesamten Privatvermögen haftet. Wenn das Geschäft scheitert – beispielsweise durch eine geplatzte Projektfinanzierung, einen Haftpflichtfall oder unvorhergesehene Baukosten –, steht der Gläubiger im schlimmsten Fall vor Ihrer privaten Haustür. Ihr eigenes Haus, Ihr privates Auto und Ihre Ersparnisse sind in diesem Fall nicht geschützt.
+                </p>
+                <p>
+                    Um genau dieses existenzielle Risiko für Gründer zu minimieren, bietet die Gesetzgebung eine andere Kategorie von Rechtsformen an. Hierbei steht nicht der einzelne Mensch im Fokus, sondern primär das eingesetzte Kapital. Diese Gesellschaften bilden nach ihrer Gründung eine völlig eigenständige "juristische Person", die selbst Rechte erwirbt, Verträge schließt und klagen kann. Der immense Vorteil dieser Kapitalgesellschaften liegt in der Risikoverteilung: Die Haftung ist strikt auf das Vermögen beschränkt, das der Gesellschaft gehört. Das Privatvermögen der Gründer bleibt bei einer Firmeninsolvenz (sofern keine Straftaten vorliegen) unangetastet. 
+                </p>
+            </div>
         </div>
-    </div>
 
-    <!-- Hauptinhalt -->
-    <main class="flex-grow max-w-6xl mx-auto px-4 py-10 w-full">
-
-        <!-- Seiten-Titel und Einleitung -->
-        <div class="mb-10">
-            <h2 class="text-3xl font-bold text-blue-900 mb-4">Bürger-FAQ: Wirtschaft, Zinsen und die EZB</h2>
-            <p class="text-lg text-gray-700 leading-relaxed max-w-4xl">
-                Liebe Bürgerinnen und Bürger von Fischbrunn,<br>
-                die aktuelle wirtschaftliche Lage und die Zinspolitik der Europäischen Zentralbank (EZB) werfen viele Fragen auf.
-                In unserer Verwaltung gehen täglich Nachrichten zu teuren Krediten oder niedrigen Sparzinsen ein.
-                Auf dieser Seite möchten wir Ihnen die Zusammenhänge zwischen Konjunktur und Zinsen transparent und verständlich erklären.
+        <div class="bg-blue-50 rounded-xl shadow-md p-8 border-l-4 border-brand-blue mb-12">
+            <h2 class="text-2xl font-bold text-brand-blue mb-4">Der Branchen-Standard: Die Gesellschaft mit beschränkter Haftung (GmbH)</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                Wegen der klaren Trennung zwischen Privat- und Firmenvermögen ist die klassische GmbH das Mittel der Wahl für viele Immobilien-Startups. Hier sind die wichtigsten Eckpfeiler, die Sie als Gründer (und auch Ihre künftigen Geschäftspartner oder Vermieter) kennen sollten:
             </p>
         </div>
 
-        <!-- Sektion 1: Der Konjunkturzyklus (Für die Beschriftung im Unterricht) -->
-        <section class="bg-white rounded-xl shadow-sm border border-gray-200 p-8 mb-10 relative overflow-hidden">
-            <div class="absolute top-0 left-0 w-2 h-full bg-green-500"></div>
-            <h3 class="text-xl font-bold text-gray-800 mb-2">1. Wo stehen wir? Der Konjunkturzyklus</h3>
-            <p class="text-gray-600 mb-6">
-                Die Wirtschaft wächst nicht gleichmäßig, sondern in Wellen. Je nachdem, in welcher Phase wir uns befinden,
-                muss die Europäische Zentralbank (EZB) unterschiedlich reagieren.
-            </p>
-
-            <!-- Interaktive Graphik-Area -->
-            <div class="w-full bg-blue-50 border-2 border-dashed border-blue-200 rounded-lg p-4 relative h-80 flex items-center justify-center">
-
-                <!-- SVG Graphik für den Konjunkturzyklus -->
-                <svg viewBox="0 0 800 300" class="w-full h-full drop-shadow-md">
-                    <!-- Wachstumstrend (Gestrichelte Linie) -->
-                    <line x1="50" y1="250" x2="750" y2="50" stroke="#9ca3af" stroke-width="2" stroke-dasharray="6,6" />
-                    <text x="760" y="45" fill="#6b7280" font-size="14" class="font-sans">Langfristiger Wachstumstrend</text>
-
-                    <!-- Die Konjunkturwelle -->
-                    <path d="M 50 250 C 150 150, 200 20, 300 100 C 400 180, 450 280, 550 200 C 650 120, 700 20, 750 100" fill="none" stroke="#1d4ed8" stroke-width="5" stroke-linecap="round"/>
-
-                    <!-- Platzhalter-Boxen für die Beschriftung durch die SuS -->
-                    <!-- Aufschwung -->
-                    <rect x="110" y="160" width="120" height="30" rx="4" fill="white" stroke="#3b82f6" stroke-width="2"/>
-                    <text x="170" y="180" fill="#9ca3af" font-size="12" text-anchor="middle" alignment-baseline="middle">Phase 1 eintragen...</text>
-
-                    <!-- Boom / Hochkonjunktur -->
-                    <rect x="240" y="20" width="120" height="30" rx="4" fill="white" stroke="#ef4444" stroke-width="2"/>
-                    <text x="300" y="40" fill="#9ca3af" font-size="12" text-anchor="middle" alignment-baseline="middle">Phase 2 eintragen...</text>
-
-                    <!-- Abschwung / Rezession -->
-                    <rect x="370" y="160" width="120" height="30" rx="4" fill="white" stroke="#f59e0b" stroke-width="2"/>
-                    <text x="430" y="180" fill="#9ca3af" font-size="12" text-anchor="middle" alignment-baseline="middle">Phase 3 eintragen...</text>
-
-                    <!-- Tief / Depression -->
-                    <rect x="490" y="250" width="120" height="30" rx="4" fill="white" stroke="#10b981" stroke-width="2"/>
-                    <text x="550" y="270" fill="#9ca3af" font-size="12" text-anchor="middle" alignment-baseline="middle">Phase 4 eintragen...</text>
-                </svg>
-
-                <div class="absolute bottom-2 right-2 text-xs text-blue-400 bg-white px-2 py-1 rounded opacity-75">
-                    *Bitte beschriften Sie die Phasen
+        <div class="grid md:grid-cols-3 gap-8">
+            
+            <!-- Card 1: Haftung -->
+            <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition">
+                <div class="w-12 h-12 bg-blue-100 text-brand-blue rounded-full flex items-center justify-center text-xl mb-4">
+                    <i class="fas fa-shield-alt"></i>
                 </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-2">Private Sicherheit</h3>
+                <p class="text-gray-600">
+                    Es haftet <strong>ausschließlich das Gesellschaftsvermögen</strong>. Ihr privates Eigentum bleibt bei Mietrückständen oder Insolvenz der Firma sicher.
+                </p>
             </div>
-        </section>
 
-        <!-- Sektion 2: Die FAQ Einträge -->
-        <section class="bg-white rounded-xl shadow-sm border border-gray-200 p-8 relative overflow-hidden">
-            <div class="absolute top-0 left-0 w-2 h-full bg-blue-600"></div>
-            <h3 class="text-xl font-bold text-gray-800 mb-6">2. Ihre häufigsten Fragen (FAQ)</h3>
+            <!-- Card 2: Kapital -->
+            <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition">
+                <div class="w-12 h-12 bg-blue-100 text-brand-blue rounded-full flex items-center justify-center text-xl mb-4">
+                    <i class="fas fa-coins"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-2">Das Stammkapital</h3>
+                <p class="text-gray-600">
+                    Für die Gründung benötigen Sie ein gesetzliches Mindestkapital. Dieses Stammkapital beträgt <strong>25.000 Euro</strong> und dient als Haftungsmasse für Gläubiger.
+                </p>
+            </div>
 
+            <!-- Card 3: Geschäftsführung -->
+            <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition">
+                <div class="w-12 h-12 bg-blue-100 text-brand-blue rounded-full flex items-center justify-center text-xl mb-4">
+                    <i class="fas fa-file-signature"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-2">Wer leitet die Firma?</h3>
+                <p class="text-gray-600">
+                    Die Eigentümer (Gesellschafter) müssen nicht zwingend selbst die Firma leiten. Verträge unterschreibt das leitende Organ: Der oder die <strong>Geschäftsführer</strong>.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- FAQ / Dropdown Szenarien -->
+        <div class="mt-16 mb-8">
+            <h2 class="text-3xl font-bold text-brand-blue mb-6">Spezielle Szenarien aus der Praxis</h2>
+            
             <div class="space-y-4">
-
-                <!-- FAQ Item 1: Boom / Hochkonjunktur -->
-                <details class="group bg-gray-50 rounded-lg border border-gray-200 cursor-pointer">
-                    <summary class="flex justify-between items-center font-medium text-lg p-5 text-gray-800 hover:text-blue-700">
-                        <span>Warum sind Kredite für Hausbauer aktuell so teuer? Ruiniert die EZB den Aufschwung?</span>
-                        <span class="transition group-open:rotate-180">
-                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                <!-- Szenario 1 -->
+                <details class="group bg-white rounded-xl shadow-sm border border-gray-200 open:shadow-md transition-all">
+                    <summary class="flex justify-between items-center font-medium cursor-pointer list-none p-6 text-xl text-brand-blue hover:text-brand-accent transition">
+                        <span class="font-bold">Wir planen ein gemeinsames Bauprojekt und wollen private Existenzen absichern. Was tun?</span>
+                        <span class="transition group-open:rotate-180 text-brand-accent">
+                            <i class="fas fa-chevron-down"></i>
                         </span>
                     </summary>
-                    <div class="px-5 pb-5 text-gray-600 border-t border-gray-200 mt-2 pt-4">
-                        <p class="italic text-gray-400">
-                            [Hier wird im Unterricht der Textbaustein der Gruppe A eingefügt. Die Gruppe erklärt hier die Phase "Boom", die hohe Inflation und die "restriktive Geldpolitik" (Zinserhöhung) der EZB.]
-                        </p>
+                    <div class="text-gray-700 px-6 pb-6 pt-2 border-t border-gray-100">
+                        <p class="mb-3"><strong>Lösung: Gründung einer Projektgesellschaft (z.B. als GmbH).</strong></p>
+                        <p>In der Immobilienwirtschaft ist es üblich, für große Bauprojekte nicht die eigene Hauptfirma oder das Privatvermögen haften zu lassen. Wenn Sie mit einem Partner kooperieren (z.B. Bauträger und Architekt), gründen Sie für dieses <em>eine</em> Projekt gemeinsam eine Kapitalgesellschaft.</p>
+                        <ul class="list-disc ml-6 mt-2 space-y-1">
+                            <li>Beide Partner zahlen Anteile in das Stammkapital ein.</li>
+                            <li>Das Bauprojekt wird komplett über diese "Projektgesellschaft" abgewickelt.</li>
+                            <li><strong>Der Clou:</strong> Sollten die Baukosten unvorhergesehen explodieren, geht im schlimmsten Fall nur diese Projektgesellschaft insolvent. Ihre Privathäuser und Ihre eigentlichen Hauptunternehmen bleiben völlig unangetastet!</li>
+                        </ul>
                     </div>
                 </details>
 
-                <!-- FAQ Item 2: Rezession / Tief -->
-                <details class="group bg-gray-50 rounded-lg border border-gray-200 cursor-pointer">
-                    <summary class="flex justify-between items-center font-medium text-lg p-5 text-gray-800 hover:text-blue-700">
-                        <span>Warum gibt es in Krisenzeiten kaum Zinsen auf mein Erspartes? Werden Sparer bestraft?</span>
-                        <span class="transition group-open:rotate-180">
-                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                <!-- Szenario 2 (UG) -->
+                <details class="group bg-white rounded-xl shadow-sm border border-gray-200 open:shadow-md transition-all">
+                    <summary class="flex justify-between items-center font-medium cursor-pointer list-none p-6 text-xl text-brand-blue hover:text-brand-accent transition">
+                        <span class="font-bold">Ich habe noch keine 25.000 Euro Startkapital. Kann ich mich trotzdem absichern?</span>
+                        <span class="transition group-open:rotate-180 text-brand-accent">
+                            <i class="fas fa-chevron-down"></i>
                         </span>
                     </summary>
-                    <div class="px-5 pb-5 text-gray-600 border-t border-gray-200 mt-2 pt-4">
-                        <p class="italic text-gray-400">
-                            [Hier wird im Unterricht der Textbaustein der Gruppe B eingefügt. Die Gruppe erklärt hier die Phase "Rezession/Tief", die Notwendigkeit von Investitionen und die "expansive Geldpolitik" (Zinssenkung) der EZB.]
-                        </p>
+                    <div class="text-gray-700 px-6 pb-6 pt-6 border-t border-gray-100 bg-gray-50 text-center rounded-b-xl">
+                        <i class="fas fa-tools text-3xl text-gray-400 mb-3"></i>
+                        <p class="italic text-gray-500">Hier entsteht in Kürze ein ausführlicher Beitrag zur Unternehmergesellschaft (UG haftungsbeschränkt). Bitte haben Sie noch etwas Geduld.</p>
                     </div>
                 </details>
-
             </div>
-        </section>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="mt-16 bg-brand-blue text-white rounded-xl p-8 text-center">
+            <h2 class="text-2xl font-bold mb-4">Bereit für den nächsten Schritt?</h2>
+            <p class="mb-6">Finden Sie jetzt die idealen Gewerberäume für Ihr rechtlich abgesichertes Startup.</p>
+            <button class="bg-brand-accent hover:bg-yellow-500 text-brand-blue font-bold py-3 px-8 rounded-full transition shadow-lg">
+                Gewerbeobjekte suchen
+            </button>
+        </div>
+
     </main>
 
-    <!-- Footer der Gemeinde -->
-    <footer class="bg-blue-900 text-blue-200 py-8 text-center text-sm">
-        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
-            <p>&copy; 2026 Gemeinde Fischbrunn - Alle Rechte vorbehalten.</p>
-            <div class="space-x-4 mt-4 md:mt-0">
-                <a href="#" class="hover:text-white transition">Impressum</a>
-                <a href="#" class="hover:text-white transition">Datenschutz</a>
-                <a href="#" class="hover:text-white transition">Kontakt zur Pressestelle</a>
-            </div>
-        </div>
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-400 py-8 text-center mt-12">
+        <p>&copy; 2026 ImmoStart - Das neutrale Informationsportal für Immobilien-Gründer</p>
     </footer>
 
 </body>
