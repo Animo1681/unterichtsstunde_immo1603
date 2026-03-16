@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemeinde Fischbrunn - FAQ Wirtschaft & Finanzen</title>
+    <!-- Tailwind CSS für das schnelle, moderne Behörden-Design -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Sanfte Animation für die aufklappbaren FAQ-Elemente */
+        details > summary {
+            list-style: none;
+        }
+        details > summary::-webkit-details-marker {
+            display: none;
+        }
+        details[open] summary ~ * {
+            animation: sweep .3s ease-in-out;
+        }
+        @keyframes sweep {
+            0%    {opacity: 0; margin-top: -10px}
+            100%  {opacity: 1; margin-top: 0px}
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans min-h-screen flex flex-col">
+
+    <!-- Header / Kopfzeile der Gemeinde -->
+    <header class="bg-blue-900 text-white shadow-md">
+        <div class="max-w-6xl mx-auto px-4 py-6 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <!-- Platzhalter für das Gemeindewappen -->
+                <div class="w-12 h-14 bg-white rounded-b-xl flex justify-center items-center shadow-inner">
+                    <span class="text-blue-900 font-bold text-xl">🐟</span>
+                </div>
+                <div>
+                    <h1 class="text-2xl font-bold tracking-wide">Gemeinde Fischbrunn</h1>
+                    <p class="text-blue-200 text-sm">Rathaus & Bürgerservice</p>
+                </div>
+            </div>
+            <div class="hidden md:flex space-x-6 text-sm font-medium">
+                <a href="#" class="hover:text-blue-300 transition">Startseite</a>
+                <a href="#" class="hover:text-blue-300 transition">Rathaus</a>
+                <a href="#" class="hover:text-blue-300 transition">Bürgerservice</a>
+                <a href="#" class="text-blue-300 border-b-2 border-blue-300 pb-1">Wirtschaft & FAQ</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumbs / Brotkrümelnavigation -->
+    <div class="bg-gray-200 border-b border-gray-300">
+        <div class="max-w-6xl mx-auto px-4 py-2 text-xs text-gray-600">
+            Startseite > Bürgerservice > Finanzen & Wirtschaft > <span class="font-semibold">Bürger-FAQ: EZB & Zinsen</span>
+        </div>
+    </div>
+
+    <!-- Hauptinhalt -->
+    <main class="flex-grow max-w-6xl mx-auto px-4 py-10 w-full">
+
+        <!-- Seiten-Titel und Einleitung -->
+        <div class="mb-10">
+            <h2 class="text-3xl font-bold text-blue-900 mb-4">Bürger-FAQ: Wirtschaft, Zinsen und die EZB</h2>
+            <p class="text-lg text-gray-700 leading-relaxed max-w-4xl">
+                Liebe Bürgerinnen und Bürger von Fischbrunn,<br>
+                die aktuelle wirtschaftliche Lage und die Zinspolitik der Europäischen Zentralbank (EZB) werfen viele Fragen auf.
+                In unserer Verwaltung gehen täglich Nachrichten zu teuren Krediten oder niedrigen Sparzinsen ein.
+                Auf dieser Seite möchten wir Ihnen die Zusammenhänge zwischen Konjunktur und Zinsen transparent und verständlich erklären.
+            </p>
+        </div>
+
+        <!-- Sektion 1: Der Konjunkturzyklus (Für die Beschriftung im Unterricht) -->
+        <section class="bg-white rounded-xl shadow-sm border border-gray-200 p-8 mb-10 relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-2 h-full bg-green-500"></div>
+            <h3 class="text-xl font-bold text-gray-800 mb-2">1. Wo stehen wir? Der Konjunkturzyklus</h3>
+            <p class="text-gray-600 mb-6">
+                Die Wirtschaft wächst nicht gleichmäßig, sondern in Wellen. Je nachdem, in welcher Phase wir uns befinden,
+                muss die Europäische Zentralbank (EZB) unterschiedlich reagieren.
+            </p>
+
+            <!-- Interaktive Graphik-Area -->
+            <div class="w-full bg-blue-50 border-2 border-dashed border-blue-200 rounded-lg p-4 relative h-80 flex items-center justify-center">
+
+                <!-- SVG Graphik für den Konjunkturzyklus -->
+                <svg viewBox="0 0 800 300" class="w-full h-full drop-shadow-md">
+                    <!-- Wachstumstrend (Gestrichelte Linie) -->
+                    <line x1="50" y1="250" x2="750" y2="50" stroke="#9ca3af" stroke-width="2" stroke-dasharray="6,6" />
+                    <text x="760" y="45" fill="#6b7280" font-size="14" class="font-sans">Langfristiger Wachstumstrend</text>
+
+                    <!-- Die Konjunkturwelle -->
+                    <path d="M 50 250 C 150 150, 200 20, 300 100 C 400 180, 450 280, 550 200 C 650 120, 700 20, 750 100" fill="none" stroke="#1d4ed8" stroke-width="5" stroke-linecap="round"/>
+
+                    <!-- Platzhalter-Boxen für die Beschriftung durch die SuS -->
+                    <!-- Aufschwung -->
+                    <rect x="110" y="160" width="120" height="30" rx="4" fill="white" stroke="#3b82f6" stroke-width="2"/>
+                    <text x="170" y="180" fill="#9ca3af" font-size="12" text-anchor="middle" alignment-baseline="middle">Phase 1 eintragen...</text>
+
+                    <!-- Boom / Hochkonjunktur -->
+                    <rect x="240" y="20" width="120" height="30" rx="4" fill="white" stroke="#ef4444" stroke-width="2"/>
+                    <text x="300" y="40" fill="#9ca3af" font-size="12" text-anchor="middle" alignment-baseline="middle">Phase 2 eintragen...</text>
+
+                    <!-- Abschwung / Rezession -->
+                    <rect x="370" y="160" width="120" height="30" rx="4" fill="white" stroke="#f59e0b" stroke-width="2"/>
+                    <text x="430" y="180" fill="#9ca3af" font-size="12" text-anchor="middle" alignment-baseline="middle">Phase 3 eintragen...</text>
+
+                    <!-- Tief / Depression -->
+                    <rect x="490" y="250" width="120" height="30" rx="4" fill="white" stroke="#10b981" stroke-width="2"/>
+                    <text x="550" y="270" fill="#9ca3af" font-size="12" text-anchor="middle" alignment-baseline="middle">Phase 4 eintragen...</text>
+                </svg>
+
+                <div class="absolute bottom-2 right-2 text-xs text-blue-400 bg-white px-2 py-1 rounded opacity-75">
+                    *Bitte beschriften Sie die Phasen
+                </div>
+            </div>
+        </section>
+
+        <!-- Sektion 2: Die FAQ Einträge -->
+        <section class="bg-white rounded-xl shadow-sm border border-gray-200 p-8 relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-2 h-full bg-blue-600"></div>
+            <h3 class="text-xl font-bold text-gray-800 mb-6">2. Ihre häufigsten Fragen (FAQ)</h3>
+
+            <div class="space-y-4">
+
+                <!-- FAQ Item 1: Boom / Hochkonjunktur -->
+                <details class="group bg-gray-50 rounded-lg border border-gray-200 cursor-pointer">
+                    <summary class="flex justify-between items-center font-medium text-lg p-5 text-gray-800 hover:text-blue-700">
+                        <span>Warum sind Kredite für Hausbauer aktuell so teuer? Ruiniert die EZB den Aufschwung?</span>
+                        <span class="transition group-open:rotate-180">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="px-5 pb-5 text-gray-600 border-t border-gray-200 mt-2 pt-4">
+                        <p class="italic text-gray-400">
+                            [Hier wird im Unterricht der Textbaustein der Gruppe A eingefügt. Die Gruppe erklärt hier die Phase "Boom", die hohe Inflation und die "restriktive Geldpolitik" (Zinserhöhung) der EZB.]
+                        </p>
+                    </div>
+                </details>
+
+                <!-- FAQ Item 2: Rezession / Tief -->
+                <details class="group bg-gray-50 rounded-lg border border-gray-200 cursor-pointer">
+                    <summary class="flex justify-between items-center font-medium text-lg p-5 text-gray-800 hover:text-blue-700">
+                        <span>Warum gibt es in Krisenzeiten kaum Zinsen auf mein Erspartes? Werden Sparer bestraft?</span>
+                        <span class="transition group-open:rotate-180">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="px-5 pb-5 text-gray-600 border-t border-gray-200 mt-2 pt-4">
+                        <p class="italic text-gray-400">
+                            [Hier wird im Unterricht der Textbaustein der Gruppe B eingefügt. Die Gruppe erklärt hier die Phase "Rezession/Tief", die Notwendigkeit von Investitionen und die "expansive Geldpolitik" (Zinssenkung) der EZB.]
+                        </p>
+                    </div>
+                </details>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer der Gemeinde -->
+    <footer class="bg-blue-900 text-blue-200 py-8 text-center text-sm">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+            <p>&copy; 2026 Gemeinde Fischbrunn - Alle Rechte vorbehalten.</p>
+            <div class="space-x-4 mt-4 md:mt-0">
+                <a href="#" class="hover:text-white transition">Impressum</a>
+                <a href="#" class="hover:text-white transition">Datenschutz</a>
+                <a href="#" class="hover:text-white transition">Kontakt zur Pressestelle</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
