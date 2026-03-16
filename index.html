@@ -12,9 +12,10 @@
                 extend: {
                     colors: {
                         brand: {
-                            blue: '#1e3a8a',
-                            light: '#eff6ff',
-                            accent: '#f59e0b'
+                            primary: '#ea580c', /* Kräftiges Orange */
+                            light: '#fff7ed',   /* Sehr helles Orange für Hintergründe */
+                            dark: '#1f2937',    /* Dunkles Anthrazit für Kontraste */
+                            accent: '#f97316'   /* Helleres Orange für Hover-Effekte */
                         }
                     }
                 }
@@ -25,17 +26,17 @@
 <body class="bg-gray-50 font-sans text-gray-800">
 
     <!-- Navigation -->
-    <nav class="bg-brand-blue text-white shadow-lg">
+    <nav class="bg-brand-primary text-white shadow-lg">
         <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
             <div class="flex items-center space-x-2">
-                <i class="fas fa-city text-2xl text-brand-accent"></i>
+                <i class="fas fa-city text-2xl text-white"></i>
                 <span class="text-xl font-bold tracking-wider">ImmoStart Ratgeber</span>
             </div>
             <div class="hidden md:flex space-x-6">
-                <a href="#" class="hover:text-brand-accent transition">Branchen-News</a>
-                <a href="#" class="hover:text-brand-accent transition">Finanzierung</a>
-                <a href="#" class="hover:text-brand-accent transition">Gewerbeflächen-Suche</a>
-                <a href="#" class="text-brand-accent font-bold border-b-2 border-brand-accent">Rechtsformen</a>
+                <a href="#" class="hover:text-brand-light transition">Branchen-News</a>
+                <a href="#" class="hover:text-brand-light transition">Finanzierung</a>
+                <a href="#" class="hover:text-brand-light transition">Gewerbeflächen-Suche</a>
+                <a href="#" class="text-white font-bold border-b-2 border-white pb-1">Rechtsformen</a>
             </div>
         </div>
     </nav>
@@ -43,7 +44,7 @@
     <!-- Hero Section -->
     <header class="bg-brand-light py-16">
         <div class="max-w-6xl mx-auto px-4 text-center">
-            <h1 class="text-4xl md:text-5xl font-bold text-brand-blue mb-4">Das Portal für Immobilien-Gründer</h1>
+            <h1 class="text-4xl md:text-5xl font-bold text-brand-dark mb-4">Das Portal für Immobilien-Gründer</h1>
             <p class="text-xl text-gray-600 max-w-2xl mx-auto mb-8">Erfolgreich mieten, bauen und kooperieren – So stellen Sie Ihr Immobilien-Startup rechtlich und wirtschaftlich auf sichere Beine.</p>
         </div>
     </header>
@@ -53,7 +54,7 @@
         
         <!-- Fließtext: Der Weg von Personen- zu Kapitalgesellschaften -->
         <div class="mb-16 bg-white p-8 rounded-xl shadow-sm border border-gray-100">
-            <h2 class="text-3xl font-bold text-brand-blue mb-6">Wichtige Grundsatzentscheidung: Wem gehört das Risiko?</h2>
+            <h2 class="text-3xl font-bold text-brand-dark mb-6">Wichtige Grundsatzentscheidung: Wem gehört das Risiko?</h2>
             
             <div class="prose max-w-none text-gray-700 text-lg leading-relaxed space-y-4">
                 <p>
@@ -68,8 +69,8 @@
             </div>
         </div>
 
-        <div class="bg-blue-50 rounded-xl shadow-md p-8 border-l-4 border-brand-blue mb-12">
-            <h2 class="text-2xl font-bold text-brand-blue mb-4">Der Branchen-Standard: Die Gesellschaft mit beschränkter Haftung (GmbH)</h2>
+        <div class="bg-brand-light rounded-xl shadow-md p-8 border-l-4 border-brand-primary mb-12">
+            <h2 class="text-2xl font-bold text-brand-dark mb-4">Der Branchen-Standard: Die Gesellschaft mit beschränkter Haftung (GmbH)</h2>
             <p class="text-gray-700 leading-relaxed mb-4">
                 Wegen der klaren Trennung zwischen Privat- und Firmenvermögen ist die klassische GmbH das Mittel der Wahl für viele Immobilien-Startups. Hier sind die wichtigsten Eckpfeiler, die Sie als Gründer (und auch Ihre künftigen Geschäftspartner oder Vermieter) kennen sollten:
             </p>
@@ -78,33 +79,33 @@
         <div class="grid md:grid-cols-3 gap-8">
             
             <!-- Card 1: Haftung -->
-            <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition">
-                <div class="w-12 h-12 bg-blue-100 text-brand-blue rounded-full flex items-center justify-center text-xl mb-4">
+            <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition border border-gray-100">
+                <div class="w-12 h-12 bg-orange-100 text-brand-primary rounded-full flex items-center justify-center text-xl mb-4">
                     <i class="fas fa-shield-alt"></i>
                 </div>
-                <h3 class="text-xl font-bold text-gray-800 mb-2">Private Sicherheit</h3>
+                <h3 class="text-xl font-bold text-brand-dark mb-2">Private Sicherheit</h3>
                 <p class="text-gray-600">
                     Es haftet <strong>ausschließlich das Gesellschaftsvermögen</strong>. Ihr privates Eigentum bleibt bei Mietrückständen oder Insolvenz der Firma sicher.
                 </p>
             </div>
 
             <!-- Card 2: Kapital -->
-            <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition">
-                <div class="w-12 h-12 bg-blue-100 text-brand-blue rounded-full flex items-center justify-center text-xl mb-4">
+            <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition border border-gray-100">
+                <div class="w-12 h-12 bg-orange-100 text-brand-primary rounded-full flex items-center justify-center text-xl mb-4">
                     <i class="fas fa-coins"></i>
                 </div>
-                <h3 class="text-xl font-bold text-gray-800 mb-2">Das Stammkapital</h3>
+                <h3 class="text-xl font-bold text-brand-dark mb-2">Das Stammkapital</h3>
                 <p class="text-gray-600">
                     Für die Gründung benötigen Sie ein gesetzliches Mindestkapital. Dieses Stammkapital beträgt <strong>25.000 Euro</strong> und dient als Haftungsmasse für Gläubiger.
                 </p>
             </div>
 
             <!-- Card 3: Geschäftsführung -->
-            <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition">
-                <div class="w-12 h-12 bg-blue-100 text-brand-blue rounded-full flex items-center justify-center text-xl mb-4">
+            <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition border border-gray-100">
+                <div class="w-12 h-12 bg-orange-100 text-brand-primary rounded-full flex items-center justify-center text-xl mb-4">
                     <i class="fas fa-file-signature"></i>
                 </div>
-                <h3 class="text-xl font-bold text-gray-800 mb-2">Wer leitet die Firma?</h3>
+                <h3 class="text-xl font-bold text-brand-dark mb-2">Wer leitet die Firma?</h3>
                 <p class="text-gray-600">
                     Die Eigentümer (Gesellschafter) müssen nicht zwingend selbst die Firma leiten. Verträge unterschreibt das leitende Organ: Der oder die <strong>Geschäftsführer</strong>.
                 </p>
@@ -114,14 +115,14 @@
 
         <!-- FAQ / Dropdown Szenarien -->
         <div class="mt-16 mb-8">
-            <h2 class="text-3xl font-bold text-brand-blue mb-6">Spezielle Szenarien aus der Praxis</h2>
+            <h2 class="text-3xl font-bold text-brand-dark mb-6">Spezielle Szenarien aus der Praxis</h2>
             
             <div class="space-y-4">
                 <!-- Szenario 1 -->
                 <details class="group bg-white rounded-xl shadow-sm border border-gray-200 open:shadow-md transition-all">
-                    <summary class="flex justify-between items-center font-medium cursor-pointer list-none p-6 text-xl text-brand-blue hover:text-brand-accent transition">
+                    <summary class="flex justify-between items-center font-medium cursor-pointer list-none p-6 text-xl text-brand-dark hover:text-brand-primary transition">
                         <span class="font-bold">Wir planen ein gemeinsames Bauprojekt und wollen private Existenzen absichern. Was tun?</span>
-                        <span class="transition group-open:rotate-180 text-brand-accent">
+                        <span class="transition group-open:rotate-180 text-brand-primary">
                             <i class="fas fa-chevron-down"></i>
                         </span>
                     </summary>
@@ -138,9 +139,9 @@
 
                 <!-- Szenario 2 (UG) -->
                 <details class="group bg-white rounded-xl shadow-sm border border-gray-200 open:shadow-md transition-all">
-                    <summary class="flex justify-between items-center font-medium cursor-pointer list-none p-6 text-xl text-brand-blue hover:text-brand-accent transition">
+                    <summary class="flex justify-between items-center font-medium cursor-pointer list-none p-6 text-xl text-brand-dark hover:text-brand-primary transition">
                         <span class="font-bold">Ich habe noch keine 25.000 Euro Startkapital. Kann ich mich trotzdem absichern?</span>
-                        <span class="transition group-open:rotate-180 text-brand-accent">
+                        <span class="transition group-open:rotate-180 text-brand-primary">
                             <i class="fas fa-chevron-down"></i>
                         </span>
                     </summary>
@@ -153,10 +154,10 @@
         </div>
 
         <!-- Call to Action -->
-        <div class="mt-16 bg-brand-blue text-white rounded-xl p-8 text-center">
+        <div class="mt-16 bg-brand-dark text-white rounded-xl p-8 text-center border-t-4 border-brand-primary">
             <h2 class="text-2xl font-bold mb-4">Bereit für den nächsten Schritt?</h2>
-            <p class="mb-6">Finden Sie jetzt die idealen Gewerberäume für Ihr rechtlich abgesichertes Startup.</p>
-            <button class="bg-brand-accent hover:bg-yellow-500 text-brand-blue font-bold py-3 px-8 rounded-full transition shadow-lg">
+            <p class="mb-6 text-gray-300">Finden Sie jetzt die idealen Gewerberäume für Ihr rechtlich abgesichertes Startup.</p>
+            <button class="bg-brand-primary hover:bg-brand-accent text-white font-bold py-3 px-8 rounded-full transition shadow-lg">
                 Gewerbeobjekte suchen
             </button>
         </div>
@@ -164,7 +165,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-gray-400 py-8 text-center mt-12">
+    <footer class="bg-gray-900 text-gray-400 py-8 text-center mt-12">
         <p>&copy; 2026 ImmoStart - Das neutrale Informationsportal für Immobilien-Gründer</p>
     </footer>
 
